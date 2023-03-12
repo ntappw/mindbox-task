@@ -1,6 +1,6 @@
 CREATE TABLE Products (
-	Id INT PRIMARY KEY,
-	"Name" TEXT
+	Id INT NOT NULL PRIMARY KEY,
+	"Name" nvarchar(60) NOT NULL
 );
 
 INSERT INTO Products
@@ -12,8 +12,8 @@ VALUES
 	(5, 'Mouse gray');
 
 CREATE TABLE Categories (
-	Id INT PRIMARY KEY,
-	"Name" TEXT
+	Id INT NOT NULL PRIMARY KEY,
+	"Name" nvarchar(60) NOT NULL
 );
 
 INSERT INTO Categories
